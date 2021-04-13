@@ -77,7 +77,6 @@ var pesoMinore = [];
 
 var pesoMaggiore = [];
 
-var thisNumber = 0;
 
 for ( var j = 0; j < zucchine.length; j++ ) {
 
@@ -86,15 +85,11 @@ for ( var j = 0; j < zucchine.length; j++ ) {
 
     if ( thisObjectZucchina.peso > 15) {
 
-        thisNumber = 0;
-        thisNumber = thisObjectZucchina.peso;
-        pesoMaggiore.push(thisNumber);
+        pesoMaggiore.push(thisObjectZucchina.peso);
 
     } else if ( thisObjectZucchina.peso < 15 ) {
 
-        thisNumber = 0;
-        thisNumber = thisObjectZucchina.peso;
-        pesoMinore.push(thisNumber);
+        pesoMinore.push(thisObjectZucchina.peso);
 
     }
 
